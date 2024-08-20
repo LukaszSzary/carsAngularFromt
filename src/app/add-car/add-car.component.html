@@ -1,0 +1,38 @@
+<p>add car</p>
+<br/>
+<form #userForm="ngForm" (ngSubmit)="addCarForm(userForm)">
+    <div>
+        <label for="brand">brand</label>
+        <input type="text" name="brand" [(ngModel)]="car.brand" required/>
+    </div>
+    <div>
+        <label for="model">model</label>
+        <input type="text" name="model" [(ngModel)]="car.model" required/>
+    </div>
+    <div>
+        <label for="doorsNumber">doorsNumber</label>
+        <input type="number" name="doorsNumber" [(ngModel)]="car.doorsNumber" required/>
+    </div>
+    <div>
+        <label for="luggageCapacity">luggageCapacity</label>
+        <input type="number" name="luggageCapacity" [(ngModel)]="car.luggageCapacity" required/>
+    </div>
+    <div>
+        <label for="enginecapacity">enginecapacity</label>
+        <input type="number" name="enginecapacity" [(ngModel)]="car.enginecapacity" required/>
+    </div>
+    <div>
+        <label for="fuelType">fuelType</label>
+        <input type="FuelType" name="fuelType" [(ngModel)]="car.fuelType" required/>
+    </div>
+    <div>
+        <label for="productionDate">productionDate</label>
+        <input type="date" name="productionDate" [(ngModel)]="car.productionDate" required/>
+    </div>
+    <div>
+        <label for="carFuelConsumption">carFuelConsumption</label>
+        <input type="number" name="carFuelConsumption" [(ngModel)]="car.carFuelConsumption" required/>
+    </div>
+    
+</form>
+

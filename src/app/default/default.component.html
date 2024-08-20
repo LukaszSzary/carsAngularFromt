@@ -1,0 +1,8 @@
+<div>
+    @for(car of cars; track car){
+    <span> {{car.model}} {{car.brand}} </span><button routerLink="/editCar" routerLinkActive="active">Edytuj</button>
+    }
+    </div>
+    <br/>
+    
+<a routerLink="/addCar" routerLinkActive="active">Add Car</a>

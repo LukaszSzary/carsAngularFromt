@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { GetCarsService } from './services/get-cars.service';
-import { Cars } from './interfaces/cars';
+import { GetCarsService } from '../services/get-cars.service';
+import { Cars } from '../interfaces/cars';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-default',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterLink, RouterOutlet],
   providers: [GetCarsService],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './default.component.html',
+  styleUrl: './default.component.css'
 })
-export class AppComponent {
+export class DefaultComponent {
   cars: Cars[]= [];
 
   constructor(private carServ: GetCarsService ){}
